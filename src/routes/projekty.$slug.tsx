@@ -17,7 +17,7 @@ export const Route = createFileRoute("/projekty/$slug")({
       };
     }
     const { project } = loaderData;
-    const title = `${project.name} — case study | Michał Stawski`;
+    const title = `${project.name} — okładka | mlvdyski`;
     const description = project.opis.slice(0, 155);
     return {
       meta: [
@@ -43,7 +43,7 @@ function CaseStudy() {
         <section className="px-6 pt-36 pb-12 md:px-12 md:pt-48">
           <div className="mx-auto max-w-[1600px]">
             <Link to="/" hash="projekty" className="label hover:text-foreground">
-              ← Wszystkie projekty
+              ← Wszystkie okładki
             </Link>
             <h1 className="mt-10 text-[18vw] leading-[0.82] font-bold tracking-[-0.05em] uppercase md:text-[12vw]">
               {project.name}
@@ -69,7 +69,7 @@ function CaseStudy() {
           <div className="mx-auto max-w-[1600px]">
             <img
               src={project.cover}
-              alt={`${project.name} — zdjęcie otwierające`}
+              alt={`${project.name} — okładka wydawnictwa`}
               className="max-h-[85vh] w-full object-cover"
             />
           </div>
@@ -171,7 +171,7 @@ function CaseStudy() {
 
         <section className="border-t border-border px-6 py-24 md:px-12">
           <div className="mx-auto max-w-[1600px]">
-            <p className="label">Następny projekt</p>
+            <p className="label">Następna okładka</p>
             <Link
               to="/projekty/$slug"
               params={{ slug: next.slug }}
