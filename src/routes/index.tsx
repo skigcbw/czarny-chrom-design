@@ -87,7 +87,7 @@ function Hero() {
           alt=""
           width={1408}
           height={1408}
-          className="float-slow w-full"
+          className="float-slow w-full mix-blend-screen"
         />
       </div>
 
