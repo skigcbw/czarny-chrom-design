@@ -96,7 +96,7 @@ function Hero() {
           <p className="label">Portfolio — Warszawa</p>
         </Reveal>
         <Reveal delay={80}>
-          <h1 className="chrome-text mt-8 text-[17vw] leading-[0.82] font-bold tracking-[-0.05em] uppercase md:text-[11vw]">
+          <h1 className="mt-8 text-[17vw] leading-[0.82] font-bold tracking-[-0.05em] uppercase md:text-[11vw]">
             Michał
             <br />
             Stawski
@@ -212,7 +212,7 @@ function ProjectCard({ project, index }: { project: (typeof projects)[number]; i
 
       <div className="mt-6 flex items-start justify-between gap-6 border-t border-border pt-5">
         <div>
-          <h3 className="text-3xl font-bold tracking-tight uppercase transition-all duration-500 group-hover:[background:var(--gradient-chrome)] group-hover:bg-clip-text group-hover:text-transparent md:text-4xl">
+          <h3 className="text-3xl font-bold tracking-tight uppercase transition-opacity duration-500 group-hover:opacity-60 md:text-4xl">
             {project.name}
           </h3>
           <p className="label mt-3">{project.category}</p>

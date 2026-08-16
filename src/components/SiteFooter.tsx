@@ -8,7 +8,7 @@ export function SiteFooter() {
   return (
     <footer className="border-t border-border px-6 py-20 md:px-12 md:py-28">
       <div className="mx-auto max-w-[1600px]">
-        <h2 className="chrome-text text-[13vw] leading-[0.85] font-bold tracking-[-0.04em] uppercase md:text-[8vw]">
+        <h2 className="text-[13vw] leading-[0.85] font-bold tracking-[-0.04em] uppercase md:text-[8vw]">
           Stwórzmy coś
           <br />
           wyjątkowego.

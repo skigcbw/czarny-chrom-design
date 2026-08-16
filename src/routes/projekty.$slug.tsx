@@ -45,7 +45,7 @@ function CaseStudy() {
             <Link to="/" hash="projekty" className="label hover:text-foreground">
               ← Wszystkie projekty
             </Link>
-            <h1 className="chrome-text mt-10 text-[18vw] leading-[0.82] font-bold tracking-[-0.05em] uppercase md:text-[12vw]">
+            <h1 className="mt-10 text-[18vw] leading-[0.82] font-bold tracking-[-0.05em] uppercase md:text-[12vw]">
               {project.name}
             </h1>
             <div className="mt-10 flex flex-wrap gap-x-16 gap-y-6 border-t border-border pt-6">
@@ -177,7 +177,7 @@ function CaseStudy() {
               params={{ slug: next.slug }}
               className="group mt-6 inline-block"
             >
-              <span className="text-[14vw] leading-[0.85] font-bold tracking-[-0.05em] uppercase transition-all duration-500 group-hover:[background:var(--gradient-chrome)] group-hover:bg-clip-text group-hover:text-transparent md:text-[8vw]">
+              <span className="text-[14vw] leading-[0.85] font-bold tracking-[-0.05em] uppercase transition-opacity duration-500 group-hover:opacity-60 md:text-[8vw]">
                 {next.name}
               </span>
             </Link>
