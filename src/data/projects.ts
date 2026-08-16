@@ -35,7 +35,7 @@ function proces(kontekst: string) {
   return [
     {
       krok: "01",
-      tytul: "Odsłuch i研 brief",
+      tytul: "Odsłuch i brief",
       opis: `Kilkukrotny odsłuch materiału, rozmowa z artystą i wypisanie obrazów, które niesie ${kontekst}.`,
     },
     {
