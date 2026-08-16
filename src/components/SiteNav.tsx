@@ -2,7 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 
 const links = [
-  { label: "Projekty", to: "/", hash: "projekty" },
+  { label: "Okładki", to: "/", hash: "projekty" },
   { label: "O mnie", to: "/", hash: "o-mnie" },
   { label: "Usługi", to: "/", hash: "uslugi" },
   { label: "Kontakt", to: "/", hash: "kontakt" },
@@ -30,9 +30,10 @@ export function SiteNav() {
       <nav className="mx-auto flex max-w-[1600px] items-center justify-between px-6 py-5 md:px-12">
         <Link
           to="/"
-          className="text-sm font-bold uppercase tracking-[0.32em] transition-opacity hover:opacity-60"
+          className="flex items-baseline gap-3 text-sm font-bold lowercase tracking-[0.22em] transition-opacity hover:opacity-60"
         >
-          Michał Stawski
+          <span className="inline-block h-2 w-2 bg-signal" aria-hidden="true" />
+          mlvdyski
         </Link>
 
         <ul className="hidden items-center gap-10 md:flex">
