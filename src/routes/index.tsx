@@ -10,40 +10,40 @@ import portrait from "@/assets/portrait.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Michał Stawski — Projektant graficzny i art director" },
+      { title: "mlvdyski — okładki muzyczne i cover art" },
       {
         name: "description",
         content:
-          "Portfolio Michała Stawskiego: identyfikacje wizualne, art direction, 3D i typografia dla marek, które chcą się wyróżniać.",
+          "mlvdyski projektuje wyłącznie okładki muzyczne: albumy, EP, single i serie wydawnicze. Czerń, typografia i mocna kompozycja.",
       },
-      { property: "og:title", content: "Michał Stawski — Projektant graficzny i art director" },
+      { property: "og:title", content: "mlvdyski — okładki muzyczne i cover art" },
       {
         property: "og:description",
-        content:
-          "Identyfikacje wizualne, kampanie i cyfrowe doświadczenia. Czerń, chrom i mocna typografia.",
+        content: "Okładki albumów, EP i singli. Modernistyczna siatka, mocna typografia, czerń.",
       },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
   }),
   component: Home,
 });
 
 const skills = [
-  "Projektowanie graficzne",
-  "Art Direction",
-  "Branding",
-  "Identyfikacja wizualna",
-  "3D / Motion",
-  "Projektowanie cyfrowe",
-  "Typografia",
+  "Okładki albumów",
+  "Okładki EP i singli",
+  "Serie wydawnicze",
+  "Typografia tytułów",
+  "3D i kolaż",
+  "Canvas i formaty social",
 ];
 
 const services = [
-  { nr: "01", title: "Identyfikacja wizualna", desc: "Znak, system i księga marki gotowa do wdrożenia." },
-  { nr: "02", title: "Art Direction", desc: "Spójny kierunek wizualny dla kampanii, sesji i publikacji." },
-  { nr: "03", title: "Projektowanie graficzne", desc: "Materiały drukowane, publikacje, opakowania, nośniki." },
-  { nr: "04", title: "Kampanie wizualne", desc: "Koncepcja, key visual i pełna adaptacja formatów." },
-  { nr: "05", title: "3D & Motion", desc: "Obiekty, rendery i animacje o jakości produkcyjnej." },
-  { nr: "06", title: "Typografia", desc: "Systemy typograficzne, lettering i skala wydawnicza." },
+  { nr: "01", title: "Okładka albumu", desc: "Pełny projekt okładki LP wraz z tylną stroną i wkładką." },
+  { nr: "02", title: "Okładka EP", desc: "Spójny zestaw grafik dla krótszego wydawnictwa." },
+  { nr: "03", title: "Okładka singla", desc: "Jeden mocny kadr, gotowy na miniaturę w streamingu." },
+  { nr: "04", title: "Seria wydawnicza", desc: "System okładek dla wytwórni lub cyklu wydań." },
+  { nr: "05", title: "Projekt winyla", desc: "Koperta, label, wkładka i przygotowanie do druku." },
+  { nr: "06", title: "Pakiet promocyjny", desc: "Canvas, kadry na single i formaty 9:16 na story." },
 ];
 
 function Home() {
@@ -78,7 +78,7 @@ function Hero() {
   return (
     <section className="relative flex min-h-screen items-center overflow-hidden px-6 pt-32 pb-20 md:px-12">
       <div
-        className="pointer-events-none absolute top-1/2 right-[-18%] w-[85vw] max-w-[900px] -translate-y-1/2 opacity-80 md:right-[-6%] md:w-[52vw]"
+        className="pointer-events-none absolute top-1/2 right-[-18%] w-[85vw] max-w-[900px] -translate-y-1/2 opacity-70 md:right-[-6%] md:w-[46vw]"
         style={{ transform: `translate3d(${offset.x}px, calc(-50% + ${offset.y}px), 0)` }}
         aria-hidden="true"
       >
@@ -91,44 +91,48 @@ function Hero() {
         />
       </div>
 
-      <div className="relative mx-auto w-full max-w-[1600px]">
-        <Reveal>
-          <p className="label">Portfolio — Warszawa</p>
-        </Reveal>
-        <Reveal delay={80}>
-          <h1 className="mt-8 text-[17vw] leading-[0.82] font-bold tracking-[-0.05em] uppercase md:text-[11vw]">
-            Michał
-            <br />
-            Stawski
-          </h1>
-        </Reveal>
-        <Reveal delay={180}>
-          <p className="mt-10 max-w-md text-[0.7rem] tracking-[0.28em] text-silver uppercase">
-            Projektant graficzny / Art Director / Artysta wizualny
-          </p>
-        </Reveal>
-        <Reveal delay={260}>
-          <p className="mt-6 max-w-md text-base leading-relaxed text-muted-foreground">
-            Tworzę identyfikacje wizualne, kampanie i cyfrowe doświadczenia dla marek, które chcą się
-            wyróżniać.
-          </p>
-        </Reveal>
-        <Reveal delay={340}>
-          <div className="mt-12 flex flex-wrap gap-4">
-            <a
-              href="#projekty"
-              className="border border-foreground bg-foreground px-8 py-4 text-[0.7rem] tracking-[0.24em] text-background uppercase transition-colors duration-300 hover:bg-transparent hover:text-foreground"
-            >
-              Zobacz projekty
-            </a>
-            <a
-              href="#kontakt"
-              className="border border-border px-8 py-4 text-[0.7rem] tracking-[0.24em] uppercase transition-colors duration-300 hover:border-chrome"
-            >
-              Skontaktuj się
-            </a>
+      <div className="relative mx-auto grid w-full max-w-[1600px] gap-8 md:grid-cols-12">
+        <div className="md:col-span-2">
+          <Reveal>
+            <p className="label border-t border-signal pt-4 text-signal">01 — Cover art</p>
+          </Reveal>
+        </div>
+        <div className="md:col-span-10">
+          <Reveal delay={80}>
+            <h1 className="text-[19vw] leading-[0.78] font-bold tracking-[-0.06em] lowercase md:text-[13vw]">
+              mlvdyski
+            </h1>
+          </Reveal>
+          <div className="mt-10 grid gap-8 border-t border-border pt-8 md:grid-cols-12">
+            <Reveal delay={180} className="md:col-span-5">
+              <p className="text-[0.7rem] tracking-[0.28em] text-silver uppercase">
+                Projektuję wyłącznie okładki muzyczne
+              </p>
+            </Reveal>
+            <Reveal delay={260} className="md:col-span-5">
+              <p className="max-w-md leading-relaxed text-muted-foreground">
+                Albumy, EP, single i całe serie wydawnicze. Okładka, która działa zarówno na winylu
+                12 cali, jak i w miniaturze 300 px.
+              </p>
+            </Reveal>
           </div>
-        </Reveal>
+          <Reveal delay={340}>
+            <div className="mt-12 flex flex-wrap gap-4">
+              <a
+                href="#projekty"
+                className="border border-foreground bg-foreground px-8 py-4 text-[0.7rem] tracking-[0.24em] text-background uppercase transition-colors duration-300 hover:bg-transparent hover:text-foreground"
+              >
+                Zobacz okładki
+              </a>
+              <a
+                href="#kontakt"
+                className="border border-border px-8 py-4 text-[0.7rem] tracking-[0.24em] uppercase transition-colors duration-300 hover:border-signal hover:text-signal"
+              >
+                Zamów okładkę
+              </a>
+            </div>
+          </Reveal>
+        </div>
       </div>
     </section>
   );
@@ -141,9 +145,9 @@ function Portfolio() {
         <Reveal>
           <div className="flex items-end justify-between border-b border-border pb-6">
             <h2 className="text-[10vw] leading-[0.85] font-bold tracking-[-0.04em] uppercase md:text-[5vw]">
-              Wybrane projekty
+              Wybrane okładki
             </h2>
-            <span className="label hidden md:block">{projects.length} realizacje</span>
+            <span className="label hidden md:block">{projects.length} wydawnictw</span>
           </div>
         </Reveal>
 
@@ -192,7 +196,7 @@ function ProjectCard({ project, index }: { project: (typeof projects)[number]; i
       <div className="relative overflow-hidden bg-graphite">
         <img
           src={project.cover}
-          alt={`Projekt ${project.name} — ${project.category}`}
+          alt={`Okładka ${project.name} — ${project.category}`}
           loading="lazy"
           className={`w-full object-cover transition-transform duration-[1200ms] ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-[1.06] ${
             project.span === "tall" ? "aspect-[4/5]" : "aspect-[7/5]"
@@ -212,7 +216,7 @@ function ProjectCard({ project, index }: { project: (typeof projects)[number]; i
 
       <div className="mt-6 flex items-start justify-between gap-6 border-t border-border pt-5">
         <div>
-          <h3 className="text-3xl font-bold tracking-tight uppercase transition-opacity duration-500 group-hover:opacity-60 md:text-4xl">
+          <h3 className="text-3xl font-bold tracking-tight uppercase transition-colors duration-500 group-hover:text-signal md:text-4xl">
             {project.name}
           </h3>
           <p className="label mt-3">{project.category}</p>
@@ -230,7 +234,7 @@ function About() {
         <Reveal className="md:col-span-5">
           <img
             src={portrait}
-            alt="Michał Stawski — portret w czerni i bieli"
+            alt="mlvdyski — portret w czerni i bieli"
             loading="lazy"
             width={1008}
             height={1264}
@@ -245,22 +249,25 @@ function About() {
           </Reveal>
           <Reveal delay={90}>
             <p className="mt-10 max-w-xl text-lg leading-relaxed text-silver md:text-2xl">
-              Projektuję identyfikacje wizualne, systemy graficzne i doświadczenia cyfrowe, łącząc
-              precyzyjną typografię, mocną kompozycję i eksperymentalną formę.
+              Jestem mlvdyski i zajmuję się jedną rzeczą: okładkami muzycznymi. Zaczynam od odsłuchu,
+              a kończę na komplecie plików gotowych do wydania.
             </p>
           </Reveal>
           <Reveal delay={160}>
             <p className="mt-6 max-w-xl leading-relaxed text-muted-foreground">
-              Pracuję samodzielnie i w zespołach interdyscyplinarnych — z markami modowymi,
-              instytucjami kultury i firmami technologicznymi. Każdy projekt zaczynam od pytania o
-              formę, nie o trend.
+              Pracuję z artystami niezależnymi i małymi wytwórniami — elektronika, rap, alternatywa.
+              Nie robię logotypów, stron ani ulotek. Tylko okładki, za to od pierwszego szkicu do
+              druku.
             </p>
           </Reveal>
 
           <ul className="mt-16 border-t border-border">
             {skills.map((s, i) => (
               <Reveal key={s} delay={i * 50}>
-                <li className="group border-b border-border py-4">
+                <li className="group flex items-baseline gap-6 border-b border-border py-4">
+                  <span className="label w-10 shrink-0 text-signal">
+                    {String(i + 1).padStart(2, "0")}
+                  </span>
                   <span className="text-2xl font-bold tracking-tight text-muted-foreground uppercase transition-colors duration-500 group-hover:text-foreground md:text-4xl">
                     {s}
                   </span>
@@ -287,7 +294,7 @@ function Services() {
           {services.map((s, i) => (
             <Reveal key={s.nr} delay={i * 60}>
               <article className="surface h-full p-8 md:p-10">
-                <span className="label">{s.nr}</span>
+                <span className="label text-signal">{s.nr}</span>
                 <h3 className="mt-8 text-xl font-bold tracking-tight uppercase md:text-2xl">
                   {s.title}
                 </h3>
@@ -303,10 +310,8 @@ function Services() {
 
 function Contact() {
   const kontakty = [
-    { label: "E-mail", value: "studio@stawski.design", href: "mailto:studio@stawski.design" },
-    { label: "Instagram", value: "@stawski.design", href: "https://instagram.com" },
-    { label: "Behance", value: "behance.net/stawski", href: "https://behance.net" },
-    { label: "LinkedIn", value: "in/stawski", href: "https://linkedin.com" },
+    { label: "E-mail", value: "kontakt@mlvdyski.com", href: "mailto:kontakt@mlvdyski.com" },
+    { label: "Instagram", value: "@mlvdyski.gfx", href: "https://instagram.com/mlvdyski.gfx" },
   ];
 
   return (
@@ -314,30 +319,36 @@ function Contact() {
       <div className="mx-auto max-w-[1600px]">
         <Reveal>
           <h2 className="text-[10vw] leading-[0.88] font-bold tracking-[-0.04em] uppercase md:text-[5vw]">
-            Porozmawiajmy
-            <br />o projekcie
+            Masz materiał?
+            <br />
+            Zrobię okładkę
           </h2>
         </Reveal>
         <Reveal delay={90}>
           <p className="mt-8 max-w-xl leading-relaxed text-muted-foreground">
-            Masz pomysł, markę lub projekt, który potrzebuje mocnej oprawy wizualnej? Napiszmy.
+            Wyślij demo, termin premiery i kilka słów o brzmieniu. Odpisuję zwykle w ciągu doby.
           </p>
         </Reveal>
         <Reveal delay={160}>
           <a
-            href="mailto:studio@stawski.design"
+            href="mailto:kontakt@mlvdyski.com"
             className="mt-12 inline-block border border-foreground bg-foreground px-10 py-5 text-[0.7rem] tracking-[0.24em] text-background uppercase transition-colors duration-300 hover:bg-transparent hover:text-foreground"
           >
             Napisz do mnie
           </a>
         </Reveal>
 
-        <dl className="mt-20 grid gap-px bg-border md:grid-cols-4">
+        <dl className="mt-20 grid gap-px bg-border md:grid-cols-2">
           {kontakty.map((k) => (
             <div key={k.label} className="surface p-8">
               <dt className="label">{k.label}</dt>
               <dd className="mt-4">
-                <a href={k.href} target="_blank" rel="noreferrer" className="text-sm text-silver hover:text-foreground">
+                <a
+                  href={k.href}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-sm text-silver hover:text-signal"
+                >
                   {k.value}
                 </a>
               </dd>
