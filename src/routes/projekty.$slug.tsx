@@ -70,7 +70,9 @@ function CaseStudy() {
             <img
               src={project.cover}
               alt={`${project.name} — okładka wydawnictwa`}
-              className="max-h-[85vh] w-full object-cover"
+              width={2160}
+                height={2160}
+                className="mx-auto aspect-square w-full max-w-[900px] object-cover"
             />
           </div>
         </section>
