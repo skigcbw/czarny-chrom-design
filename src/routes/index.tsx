@@ -5,7 +5,6 @@ import { SiteFooter } from "@/components/SiteFooter";
 import { Reveal } from "@/components/Reveal";
 import { projects } from "@/data/projects";
 import heroChrome from "@/assets/hero-chrome.jpg";
-import portrait from "@/assets/portrait.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -151,13 +150,7 @@ function Portfolio() {
             <Reveal
               key={p.slug}
               delay={(i % 2) * 90}
-              className={
-                p.span === "tall"
-                  ? "md:col-span-5"
-                  : p.span === "wide"
-                    ? "md:col-span-7"
-                    : "md:col-span-6 md:col-start-4"
-              }
+              className="md:col-span-6"
             >
               <ProjectCard project={p} index={i} />
             </Reveal>
@@ -193,9 +186,9 @@ function ProjectCard({ project, index }: { project: (typeof projects)[number]; i
           src={project.cover}
           alt={`Okładka ${project.name} — ${project.category}`}
           loading="lazy"
-          className={`w-full object-cover transition-transform duration-[1200ms] ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-[1.06] ${
-            project.span === "tall" ? "aspect-[4/5]" : "aspect-[7/5]"
-          }`}
+          width={2160}
+          height={2160}
+          className="aspect-square w-full object-cover transition-transform duration-[1200ms] ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-[1.06]"
         />
         <div
           className="pointer-events-none absolute inset-0 transition-opacity duration-500"
@@ -226,17 +219,7 @@ function About() {
   return (
     <section id="o-mnie" className="scroll-mt-24 border-t border-border px-6 py-24 md:px-12 md:py-36">
       <div className="mx-auto grid max-w-[1600px] gap-16 md:grid-cols-12">
-        <Reveal className="md:col-span-5">
-          <img
-            src={portrait}
-            alt="mlvdyski — portret w czerni i bieli"
-            loading="lazy"
-            width={1008}
-            height={1264}
-            className="w-full grayscale contrast-125"
-          />
-        </Reveal>
-        <div className="md:col-span-7">
+        <div className="md:col-span-12">
           <Reveal>
             <h2 className="text-[12vw] leading-[0.85] font-bold tracking-[-0.04em] uppercase md:text-[5vw]">
               O mnie

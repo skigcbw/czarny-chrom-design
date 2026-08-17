@@ -2,7 +2,8 @@ import noirAsset from "@/assets/reklamacja47.jpg.asset.json";
 const noir = noirAsset.url;
 import monoAsset from "@/assets/niema-faf.jpg.asset.json";
 const mono = monoAsset.url;
-import chrome from "@/assets/project-chrome.jpg";
+import chromeAsset from "@/assets/phamu-skille2.jpg.asset.json";
+const chrome = chromeAsset.url;
 import form from "@/assets/project-form.jpg";
 import voidImg from "@/assets/project-void.jpg";
 import moodboard from "@/assets/detail-moodboard.jpg";
@@ -62,7 +63,7 @@ export const projects: Project[] = [
   {
     slug: "noir",
     name: "NOIR",
-    category: "Okładka albumu / Techno",
+    category: "Cover Art",
     year: "2026",
     cover: noir,
     span: "tall",
@@ -89,7 +90,7 @@ export const projects: Project[] = [
   {
     slug: "mono",
     name: "MONO",
-    category: "Okładka EP / Elektronika",
+    category: "Cover Art",
     year: "2026",
     cover: mono,
     span: "wide",
@@ -115,7 +116,7 @@ export const projects: Project[] = [
   {
     slug: "chrome-01",
     name: "CHROME 01",
-    category: "Okładka singla / 3D",
+    category: "Cover Art",
     year: "2025",
     cover: chrome,
     span: "half",
@@ -139,7 +140,7 @@ export const projects: Project[] = [
   {
     slug: "form",
     name: "FORM",
-    category: "Okładka albumu / Typografia",
+    category: "Cover Art",
     year: "2025",
     cover: form,
     span: "tall",
@@ -163,7 +164,7 @@ export const projects: Project[] = [
   {
     slug: "void",
     name: "VOID",
-    category: "Okładki serii / Wytwórnia",
+    category: "Cover Art",
     year: "2025",
     cover: voidImg,
     span: "wide",
