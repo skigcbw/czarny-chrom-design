@@ -1,4 +1,5 @@
-import noir from "@/assets/project-noir.jpg";
+import noirAsset from "@/assets/reklamacja47.jpg.asset.json";
+const noir = noirAsset.url;
 import mono from "@/assets/project-mono.jpg";
 import chrome from "@/assets/project-chrome.jpg";
 import form from "@/assets/project-form.jpg";
