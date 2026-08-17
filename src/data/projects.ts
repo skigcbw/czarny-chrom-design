@@ -4,7 +4,8 @@ import monoAsset from "@/assets/niema-faf.jpg.asset.json";
 const mono = monoAsset.url;
 import chromeAsset from "@/assets/phamu-skille2.jpg.asset.json";
 const chrome = chromeAsset.url;
-import form from "@/assets/project-form.jpg";
+import formAsset from "@/assets/fefe.jpg.asset.json";
+const form = formAsset.url;
 import voidImg from "@/assets/project-void.jpg";
 import moodboard from "@/assets/detail-moodboard.jpg";
 
