@@ -58,7 +58,7 @@
   --input: oklch(1 0 0 / 14%);
   --ring: oklch(0.8 0 0);
   --graphite: oklch(0.24 0 0);
-  --signal: oklch(0.66 0.22 32);
+  --signal: oklch(0.86 0 0);
   --chrome: oklch(0.86 0 0);
   --silver: oklch(0.72 0 0);
   --gradient-chrome: linear-gradient(
@@ -89,7 +89,7 @@
 
   ::selection {
     background: var(--signal);
-    color: oklch(0.98 0 0);
+    color: oklch(0.09 0 0);
   }
 }
 

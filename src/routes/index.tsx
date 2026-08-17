@@ -92,12 +92,7 @@ function Hero() {
       </div>
 
       <div className="relative mx-auto grid w-full max-w-[1600px] gap-8 md:grid-cols-12">
-        <div className="md:col-span-2">
-          <Reveal>
-            <p className="label border-t border-signal pt-4 text-signal">01 — Cover art</p>
-          </Reveal>
-        </div>
-        <div className="md:col-span-10">
+        <div className="md:col-span-12">
           <Reveal delay={80}>
             <h1 className="text-[19vw] leading-[0.78] font-bold tracking-[-0.06em] lowercase md:text-[13vw]">
               mlvdyski
