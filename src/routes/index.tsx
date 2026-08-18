@@ -9,7 +9,7 @@ import heroChrome from "@/assets/hero-chrome.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "mlvdyski — okładki muzyczne i cover art" },
+      { title: "MLVDYSKI" },
       {
         name: "description",
         content:
