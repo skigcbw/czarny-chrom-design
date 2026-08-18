@@ -162,30 +162,6 @@ export const projects: Project[] = [
     ],
     finalne: "Koperta winylowa z lakierem wybiórczym, wkładka oraz wersja cyfrowa okładki.",
   },
-  {
-    slug: "void",
-    name: "VOID",
-    category: "Cover Art",
-    year: "2025",
-    cover: voidImg,
-    span: "wide",
-    opis: "Seria okładek dla wydawnictwa klubowego. Jeden szkielet kompozycji, dwanaście wydań — rozpoznawalna linia bez powtarzania tego samego obrazu.",
-    zakres: ["System okładek", "Art direction serii", "Szablony dla wytwórni"],
-    kierunek: "Im mniej znaku wytwórni, tym więcej miejsca na muzykę. Rozpoznawalność niesie układ, nie logo.",
-    moodboard,
-    moodboardOpis: "Czerń w kilkunastu odcieniach i jedno pasmo sygnałowej czerwieni.",
-    typografia: [
-      { nazwa: "Grotesk Display", opis: "Tytuły wydań, stała pozycja w kadrze." },
-      { nazwa: "Grotesk Text", opis: "Numer katalogowy i nazwiska artystów." },
-    ],
-    kolory: wspolneKolory,
-    proces: proces("seria wydawnicza"),
-    mockupy: [
-      { src: voidImg, alt: "Seria okładek wytwórni VOID" },
-      { src: mono, alt: "Szablony okładek serii VOID" },
-    ],
-    finalne: "System okładek na dwanaście wydań, szablony w plikach źródłowych i instrukcja użycia.",
-  },
 ];
 
 export const getProject = (slug: string) => projects.find((p) => p.slug === slug);

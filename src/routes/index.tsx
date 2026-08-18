@@ -32,7 +32,6 @@ const skills = [
   "Okładki EP i singli",
   "Serie wydawnicze",
   "Typografia tytułów",
-  "3D i kolaż",
   "Canvas i formaty social",
 ];
 
@@ -233,9 +232,9 @@ function About() {
           </Reveal>
           <Reveal delay={160}>
             <p className="mt-6 max-w-xl leading-relaxed text-muted-foreground">
-              Pracuję z artystami niezależnymi i małymi wytwórniami — elektronika, rap, alternatywa.
-              Nie robię logotypów, stron ani ulotek. Tylko okładki, za to od pierwszego szkicu do
-              druku.
+              Pracuję z artystami niezależnymi i małymi wytwórniami, od rapu po każdy gatunek
+              muzyczny, nie ma to znaczenia. Nie zajmuję się projektowaniem grafik wektorowych typu
+              logotypy.
             </p>
           </Reveal>
 
@@ -288,7 +287,7 @@ function Services() {
 
 function Contact() {
   const kontakty = [
-    { label: "E-mail", value: "kontakt@mlvdyski.com", href: "mailto:kontakt@mlvdyski.com" },
+    { label: "E-mail", value: "kontakt.mlvdyski@gmail.com", href: "mailto:kontakt.mlvdyski@gmail.com" },
     { label: "Instagram", value: "@mlvdyski.gfx", href: "https://instagram.com/mlvdyski.gfx" },
   ];
 
@@ -309,7 +308,7 @@ function Contact() {
         </Reveal>
         <Reveal delay={160}>
           <a
-            href="mailto:kontakt@mlvdyski.com"
+            href="mailto:kontakt.mlvdyski@gmail.com"
             className="mt-12 inline-block border border-foreground bg-foreground px-10 py-5 text-[0.7rem] tracking-[0.24em] text-background uppercase transition-colors duration-300 hover:bg-transparent hover:text-foreground"
           >
             Napisz do mnie
