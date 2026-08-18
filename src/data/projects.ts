@@ -63,8 +63,8 @@ function proces(kontekst: string) {
 export const projects: Project[] = [
   {
     slug: "noir",
-    name: "NOIR",
-    category: "Cover Art",
+    name: 'OKI "REKLAMACJA\'47"',
+    category: "Re-creation",
     year: "2026",
     cover: noir,
     span: "tall",
@@ -90,7 +90,7 @@ export const projects: Project[] = [
   },
   {
     slug: "mono",
-    name: "MONO",
+    name: 'FAF "NIE MA"',
     category: "Cover Art",
     year: "2026",
     cover: mono,
@@ -116,9 +116,9 @@ export const projects: Project[] = [
   },
   {
     slug: "chrome-01",
-    name: "CHROME 01",
+    name: 'PHAMU "SKILLE 2"',
     category: "Cover Art",
-    year: "2025",
+    year: "2026",
     cover: chrome,
     span: "half",
     opis: "Singiel z chromowanym obiektem 3D w centrum kadru. Obiekt odbija otoczenie — na każdej platformie wygląda jak inna wersja tej samej rzeźby.",
@@ -140,9 +140,9 @@ export const projects: Project[] = [
   },
   {
     slug: "form",
-    name: "FORM",
-    category: "Cover Art",
-    year: "2025",
+    name: 'KABE "FEFE"',
+    category: "Re-creation",
+    year: "2026",
     cover: form,
     span: "tall",
     opis: "Album, w którym jedyną ilustracją jest litera. Tytuł rozciągnięty na całą okładkę, lakier UV na czerni buduje obraz wyłącznie światłem.",
