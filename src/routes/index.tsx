@@ -288,7 +288,7 @@ function Services() {
 
 function Contact() {
   const kontakty = [
-    { label: "E-mail", value: "kontakt@mlvdyski.com", href: "mailto:kontakt@mlvdyski.com" },
+    { label: "E-mail", value: "kontakt.mlvdyski@gmail.com", href: "mailto:kontakt.mlvdyski@gmail.com" },
     { label: "Instagram", value: "@mlvdyski.gfx", href: "https://instagram.com/mlvdyski.gfx" },
   ];
 
@@ -309,7 +309,7 @@ function Contact() {
         </Reveal>
         <Reveal delay={160}>
           <a
-            href="mailto:kontakt@mlvdyski.com"
+            href="mailto:kontakt.mlvdyski@gmail.com"
             className="mt-12 inline-block border border-foreground bg-foreground px-10 py-5 text-[0.7rem] tracking-[0.24em] text-background uppercase transition-colors duration-300 hover:bg-transparent hover:text-foreground"
           >
             Napisz do mnie

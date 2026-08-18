@@ -10,8 +10,8 @@ export function SiteFooter() {
 
         <div className="mt-20 flex flex-col gap-8 border-t border-border pt-8 md:flex-row md:items-center md:justify-between">
           <p className="label">© 2026 mlvdyski</p>
-          <a href="mailto:kontakt@mlvdyski.com" className="label hover:text-signal">
-            kontakt@mlvdyski.com
+          <a href="mailto:kontakt.mlvdyski@gmail.com" className="label hover:text-signal">
+            kontakt.mlvdyski@gmail.com
           </a>
           <a
             href="https://instagram.com/mlvdyski.gfx"
