@@ -203,11 +203,12 @@ function ProjectCard({ project, index }: { project: (typeof projects)[number]; i
 
       <div className="mt-6 flex items-start justify-between gap-6 border-t border-border pt-5">
         <div className="min-w-0 flex-1">
-          <h3 className="text-3xl font-bold tracking-tight break-words uppercase transition-colors duration-500 group-hover:text-signal md:text-4xl">
+          <h3 className="truncate text-[clamp(1.05rem,3.6vw,1.6rem)] font-bold tracking-tight whitespace-nowrap uppercase transition-colors duration-500 group-hover:text-signal md:text-[clamp(1.1rem,1.9vw,2rem)]">
             {project.name}
           </h3>
           <p className="label mt-3">{project.category}</p>
         </div>
+
         <span className="label shrink-0">{project.year}</span>
       </div>
     </Link>
