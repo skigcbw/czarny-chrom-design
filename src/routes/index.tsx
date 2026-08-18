@@ -18,7 +18,7 @@ export const Route = createFileRoute("/")({
       { property: "og:title", content: "MLVDYSKI - GRAPHIC DESIGNER PORTFOLIO" },
       {
         property: "og:description",
-        content: "Okładki albumów, EP i singli. Modernistyczna siatka, mocna typografia, czerń.",
+        content: "Okładki albumów, EP i singli.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
