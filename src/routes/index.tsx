@@ -140,8 +140,16 @@ function Portfolio() {
             <h2 className="text-[10vw] leading-[0.85] font-bold tracking-[-0.04em] uppercase md:text-[5vw]">
               Wybrane okładki
             </h2>
-            <span className="label hidden md:block">{projects.length} wydawnictw</span>
-          </div>
+            <span className="label hidden md:block">
+  {projects.length}{" "}
+  {projects.length === 1
+    ? "projekt"
+    : projects.length % 10 >= 2 &&
+        projects.length % 10 <= 4 &&
+        (projects.length % 100 < 10 || projects.length % 100 >= 20)
+      ? "projekty"
+      : "projektów"}
+           </span>
         </Reveal>
 
         <div className="mt-16 grid grid-cols-1 gap-x-8 gap-y-20 md:grid-cols-12">
