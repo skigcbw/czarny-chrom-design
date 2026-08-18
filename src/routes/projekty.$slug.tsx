@@ -90,86 +90,7 @@ function CaseStudy() {
           </div>
         </section>
 
-        <Block title="Kierunek kreatywny">
-          <p className="max-w-3xl text-lg leading-relaxed text-muted-foreground md:text-xl">
-            {project.kierunek}
-          </p>
-        </Block>
-
-        <Block title="Moodboard">
-          <img
-            src={project.moodboard}
-            alt={`Moodboard projektu ${project.name}`}
-            loading="lazy"
-            className="w-full"
-          />
-          <p className="mt-6 max-w-2xl text-sm leading-relaxed text-muted-foreground">
-            {project.moodboardOpis}
-          </p>
-        </Block>
-
-        <Block title="Typografia">
-          <ul className="border-t border-border">
-            {project.typografia.map((t) => (
-              <li key={t.nazwa} className="grid gap-4 border-b border-border py-8 md:grid-cols-12">
-                <span className="text-3xl font-bold tracking-tight uppercase md:col-span-5 md:text-5xl">
-                  {t.nazwa}
-                </span>
-                <span className="text-sm leading-relaxed text-muted-foreground md:col-span-7">
-                  {t.opis}
-                </span>
-              </li>
-            ))}
-          </ul>
-        </Block>
-
-        <Block title="Kolorystyka">
-          <div className="grid gap-px bg-border sm:grid-cols-2 md:grid-cols-4">
-            {project.kolory.map((k) => (
-              <div key={k.nazwa} className="bg-background p-6">
-                <div
-                  className="h-32 w-full border border-border"
-                  style={{ background: k.hex }}
-                  aria-hidden="true"
-                />
-                <p className="mt-4 text-sm uppercase">{k.nazwa}</p>
-                <p className="label mt-1">{k.hex}</p>
-              </div>
-            ))}
-          </div>
-        </Block>
-
-        <Block title="Proces projektowy">
-          <ol className="grid gap-px bg-border md:grid-cols-2">
-            {project.proces.map((p) => (
-              <li key={p.krok} className="surface p-8 md:p-10">
-                <span className="label">{p.krok}</span>
-                <h3 className="mt-6 text-xl font-bold tracking-tight uppercase">{p.tytul}</h3>
-                <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{p.opis}</p>
-              </li>
-            ))}
-          </ol>
-        </Block>
-
-        <Block title="Mockupy">
-          <div className="grid gap-8 md:grid-cols-2">
-            {project.mockupy.map((m, i) => (
-              <img
-                key={i}
-                src={m.src}
-                alt={m.alt}
-                loading="lazy"
-                className="aspect-[4/3] w-full object-cover"
-              />
-            ))}
-          </div>
-        </Block>
-
-        <Block title="Finalne materiały">
-          <p className="max-w-3xl text-lg leading-relaxed text-muted-foreground md:text-xl">
-            {project.finalne}
-          </p>
-        </Block>
+      
 
         <section className="border-t border-border px-6 py-24 md:px-12">
           <div className="mx-auto max-w-[1600px]">
@@ -191,17 +112,4 @@ function CaseStudy() {
   );
 }
 
-function Block({ title, children }: { title: string; children: React.ReactNode }) {
-  return (
-    <section className="border-t border-border px-6 py-20 md:px-12 md:py-28">
-      <div className="mx-auto grid max-w-[1600px] gap-10 md:grid-cols-12">
-        <Reveal className="md:col-span-3">
-          <h2 className="label">{title}</h2>
-        </Reveal>
-        <Reveal delay={80} className="md:col-span-9">
-          {children}
-        </Reveal>
-      </div>
-    </section>
-  );
-}
+
