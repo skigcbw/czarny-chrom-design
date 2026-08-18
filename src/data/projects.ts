@@ -59,7 +59,7 @@ function proces(kontekst: string) {
 
 export const projects: Project[] = [
   {
-    slug: "noir",
+    slug: "reklamacja47",
     name: 'OKI "REKLAMACJA\'47"',
     category: "Re-creation",
     year: "2026",
@@ -86,7 +86,7 @@ export const projects: Project[] = [
       "Okładka w wersji cyfrowej i winylowej, canvas, zestaw kadrów na single oraz szablony postów.",
   },
   {
-    slug: "mono",
+    slug: "niema",
     name: 'FAF "NIE MA"',
     category: "Cover Art",
     year: "2026",
@@ -112,7 +112,7 @@ export const projects: Project[] = [
     finalne: "Okładka EP, cztery warianty singlowe, canvas oraz pakiet formatów 1:1 i 9:16.",
   },
   {
-    slug: "chrome-01",
+    slug: "skille2",
     name: 'PHAMU "SKILLE 2"',
     category: "Cover Art",
     year: "2026",
@@ -136,7 +136,7 @@ export const projects: Project[] = [
     finalne: "Okładka 3000 × 3000 px, animowany canvas oraz pakiet kadrów promocyjnych.",
   },
   {
-    slug: "form",
+    slug: "fefe",
     name: 'KABE "FEFE"',
     category: "Re-creation",
     year: "2026",
