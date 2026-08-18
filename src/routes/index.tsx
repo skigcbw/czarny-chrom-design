@@ -32,7 +32,6 @@ const skills = [
   "Okładki EP i singli",
   "Serie wydawnicze",
   "Typografia tytułów",
-  "3D i kolaż",
   "Canvas i formaty social",
 ];
 
