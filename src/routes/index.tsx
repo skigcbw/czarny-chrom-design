@@ -202,8 +202,8 @@ function ProjectCard({ project, index }: { project: (typeof projects)[number]; i
       </div>
 
       <div className="mt-6 flex items-start justify-between gap-6 border-t border-border pt-5">
-        <div>
-          <h3 className="text-3xl font-bold tracking-tight uppercase transition-colors duration-500 group-hover:text-signal md:text-4xl">
+        <div className="min-w-0 flex-1">
+          <h3 className="text-3xl font-bold tracking-tight break-words uppercase transition-colors duration-500 group-hover:text-signal md:text-4xl">
             {project.name}
           </h3>
           <p className="label mt-3">{project.category}</p>
