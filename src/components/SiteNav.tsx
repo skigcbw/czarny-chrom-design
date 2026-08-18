@@ -5,6 +5,7 @@ const links = [
   { label: "Okładki", to: "/", hash: "projekty" },
   { label: "O mnie", to: "/", hash: "o-mnie" },
   { label: "Usługi", to: "/", hash: "uslugi" },
+  { label: "Opinie", to: "/opinie" },
   { label: "Kontakt", to: "/", hash: "kontakt" },
 ];
 
