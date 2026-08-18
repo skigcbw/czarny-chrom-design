@@ -150,6 +150,7 @@ function Portfolio() {
       ? "projekty"
       : "projektów"}
            </span>
+         </div>
         </Reveal>
 
         <div className="mt-16 grid grid-cols-1 gap-x-8 gap-y-20 md:grid-cols-12">
