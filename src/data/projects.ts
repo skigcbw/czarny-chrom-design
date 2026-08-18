@@ -66,7 +66,7 @@ export const projects: Project[] = [
     cover: noir,
     span: "tall",
     opis: 'Re-kreacja okładki albumu OKI\'ego pt. "Reklamacja47".',
-    zakres: ["Okładka albumu" "Re-kreacja"],
+    zakres: ["Okładka albumu", "Re-kreacja"],
     kierunek:
       "Ciemność bez ozdobników. Cały ładunek niesie faktura i jedno pasmo światła — dokładnie tak, jak brzmi materiał.",
     moodboard,
