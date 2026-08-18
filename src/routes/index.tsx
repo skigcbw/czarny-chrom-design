@@ -232,9 +232,9 @@ function About() {
           </Reveal>
           <Reveal delay={160}>
             <p className="mt-6 max-w-xl leading-relaxed text-muted-foreground">
-              Pracuję z artystami niezależnymi i małymi wytwórniami — elektronika, rap, alternatywa.
-              Nie robię logotypów, stron ani ulotek. Tylko okładki, za to od pierwszego szkicu do
-              druku.
+              Pracuję z artystami niezależnymi i małymi wytwórniami, od rapu po każdy gatunek
+              muzyczny, nie ma to znaczenia. Nie zajmuję się projektowaniem grafik wektorowych typu
+              logotypy.
             </p>
           </Reveal>
 
