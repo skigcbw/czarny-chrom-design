@@ -15,7 +15,7 @@ export const Route = createFileRoute("/")({
         content:
           "mlvdyski projektuje wyłącznie okładki muzyczne: albumy, EP, single i serie wydawnicze. Czerń, typografia i mocna kompozycja.",
       },
-      { property: "og:title", content: "mlvdyski — okładki muzyczne i cover art" },
+      { property: "og:title", content: "MLVDYSKI - GRAPHIC DESIGNER PORTFOLIO" },
       {
         property: "og:description",
         content: "Okładki albumów, EP i singli. Modernistyczna siatka, mocna typografia, czerń.",
