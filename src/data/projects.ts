@@ -2,6 +2,8 @@ import noir from "@/assets/reklamacja47.jpg";
 import mono from "@/assets/niema-faf.jpg";
 import chrome from "@/assets/phamu-skille2.jpg";
 import form from "@/assets/fefe.jpg";
+import voidImg from "@/assets/project-void.jpg";
+import moodboard from "@/assets/detail-moodboard.jpg";
 
 
 export type Project = {
